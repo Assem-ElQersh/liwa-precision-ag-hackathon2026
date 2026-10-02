@@ -77,9 +77,9 @@ liwa-precision-ag-hackathon2026/
 ├── presentation/
 │   └── slides.pdf
 ├── docs/
-│   ├── team.md
 │   ├── methodology.md
-│   └── data_sources.md
+│   ├── data_sources.md
+│   └── hackathon_research_notes.md
 └── training_materials/
     ├── gdal/
     ├── hyperspectral/
