@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "liwa_aoi",
+        "description": "Liwa Oasis agricultural area, Abu Dhabi, UAE",
+        "theme": "Precision Agriculture & Crop Intelligence"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [53.5, 22.8],
+          [54.2, 22.8],
+          [54.2, 23.3],
+          [53.5, 23.3],
+          [53.5, 22.8]
+        ]]
+      }
+    }
+  ]
+}
