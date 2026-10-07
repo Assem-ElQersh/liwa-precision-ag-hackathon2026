@@ -224,12 +224,16 @@ graph LR
 | :--- | :--- | :--- |
 | Onboarding rules require baseline multispectral image before hyperspectral/DL | `https://spaceacademy-hackathons.space.gov.ae/onboarding` | Forces Sentinel-2 MSI baseline before attempting Tanager/EnMAP deep models. |
 | Commercial Planet & gIQ data excluded from Phase 2 PoC | `https://spaceacademy-hackathons.space.gov.ae/onboarding` | Rules out relying on proprietary commercial Planet data for PoC submission. |
-| Prior team DEMO metrics used synthetic/mock datasets | `liwa_green_poc_AR.pdf` | **Rules out using prior team outputs as ground truth.** Forces all pipelines to process real Sentinel-2/Tanager STAC imagery. |
+| Prior team DEMO metrics used synthetic/mock datasets | `liwa_green_poc_AR.pdf` | Rules out using prior team outputs as ground truth. Forces all pipelines to process real Sentinel-2/Tanager STAC imagery. |
+| Malak's South Liwa screening (`Green-Liwa`) evaluated 28 km² bare dune site ($53.89^\circ E, 23.07^\circ N$) | `Green-Liwa/South_Liwa_Salinity_Screening (1).ipynb` | Demonstrates that optical SI/NDSI on uncultivated bare sand can be confounded by soil brightness (53rd percentile rank). |
+| VOGI / NDRE necessity on active date palm fields | `Green-Liwa/South_Liwa_Site_Selection_Report-1.pdf` | While bare sand reclamation screening uses SI/NDSI, active date palm farms require VOGI ($R_{740}/R_{720}$) and NDRE for chlorophyll water stress detection. |
+| GCP Earth Engine Project ID registered | `horizontal-cab-473909-s3` | Enables GEE Python API integration (`ee.Initialize(project='horizontal-cab-473909-s3')`). |
 | `leafmap` Planetary Computer Titiler endpoint conflict | `notebooks/00_data_access.ipynb` | Forces `os.environ["TITILER_ENDPOINT"] = "https://titiler.xyz"` setting prior to map rendering. |
 | Tanager atmospheric water vapor noise windows at 1350–1450nm and 1800–1950nm | `notebooks/02_hyperspectral_analysis.ipynb` | Mandates spectral band filtering function `is_water_vapor(wl)` leaving 143 clean bands. |
 | Spatial autocorrelation leakage between adjacent pixels | `notebooks/05_ml_baselines.ipynb` | Mandates parcel/field-level spatial cross-validation rather than random pixel splitting on real scenes. |
 
 ---
+
 
 
 
