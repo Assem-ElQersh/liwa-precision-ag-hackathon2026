@@ -218,6 +218,22 @@ graph LR
 
 ---
 
+## Master Provenance Ledger
+
+| The Empirical Finding / Metric | Exact Script/Notebook Name | Analytical Deduction (What this rules out/forces next) |
+| :--- | :--- | :--- |
+| Onboarding rules require baseline multispectral image before hyperspectral/DL | `https://spaceacademy-hackathons.space.gov.ae/onboarding` | Forces Sentinel-2 MSI baseline before attempting Tanager/EnMAP deep models. |
+| Commercial Planet & gIQ data excluded from Phase 2 PoC | `https://spaceacademy-hackathons.space.gov.ae/onboarding` | Rules out relying on proprietary commercial Planet data for PoC submission. |
+| Prior team DEMO metrics used synthetic/mock datasets | `liwa_green_poc_AR.pdf` | **Rules out using prior team outputs as ground truth.** Forces all pipelines to process real Sentinel-2/Tanager STAC imagery. |
+| `leafmap` Planetary Computer Titiler endpoint conflict | `notebooks/00_data_access.ipynb` | Forces `os.environ["TITILER_ENDPOINT"] = "https://titiler.xyz"` setting prior to map rendering. |
+| Tanager atmospheric water vapor noise windows at 1350–1450nm and 1800–1950nm | `notebooks/02_hyperspectral_analysis.ipynb` | Mandates spectral band filtering function `is_water_vapor(wl)` leaving 143 clean bands. |
+| Spatial autocorrelation leakage between adjacent pixels | `notebooks/05_ml_baselines.ipynb` | Mandates parcel/field-level spatial cross-validation rather than random pixel splitting on real scenes. |
+
+---
+
+
+
+
 ## Training Materials
 
 All preparatory training materials from the hackathon are organized in `training_materials/`:
