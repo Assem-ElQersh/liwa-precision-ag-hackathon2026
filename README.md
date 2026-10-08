@@ -248,6 +248,7 @@ graph LR
 | Hyperspectral EDA pipeline (water vapor masking 1350–1450nm/1800–1950nm & 4-component NMF unmixing) verified | `notebooks/02_hyperspectral_analysis.ipynb` | Enables sub-pixel date palm canopy vs. bare sand vs. saline crust unmixing across mounted EnMAP and Tanager cubes. |
 | Multispectral & Hyperspectral vegetation and soil salinity index calculations (NDVI, SAVI, SI, NDRE) verified | `notebooks/03_spectral_indices.ipynb` | Establishes baseline vegetation health and soil salinity mapping over Sentinel-2 and hyperspectral imagery. |
 | End-to-end execution of `02_hyperspectral_analysis.ipynb` and `03_spectral_indices.ipynb` empirically validated | `notebooks/02_hyperspectral_analysis.ipynb` & `notebooks/03_spectral_indices.ipynb` | Confirms complete local and Kaggle runtime readiness for EDA, hyperspectral unmixing, and spectral index visualization. |
+| EPSG:4326 DEM topographic slope gradient calculation unit mismatch (degrees vs meters) | `notebooks/00_kaggle_master_eda.ipynb` | Scaling transform step sizes by latitude cosine ($111000 \cdot \cos(\text{lat})$) converts degree grid spacing to meters, eliminating uniform $90^\circ$ saturation and rendering accurate $0^\circ-25^\circ$ dune slopes. |
 
 ---
 
