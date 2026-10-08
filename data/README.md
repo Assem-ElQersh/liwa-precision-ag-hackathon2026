@@ -50,13 +50,21 @@ These datasets are immediately accessible programmatically via open STAC APIs or
 ### 🟡 Tier 2: Free Self-Serve Registration Required
 These datasets are free for research/academic use but require registering an account to obtain an API key or session token.
 
-| Dataset | Provider | Bands / Resolution | Registration / Download Portal | Auth Method / Credentials |
+| Dataset | Provider | Bands / Resolution | Directory / File Hierarchy | Auth Method / Credentials |
 |---|---|---|---|---|
-| **EnMAP L2A & SPECTRAL_EARTH** | DLR (Germany) | 224 bands (30m COG) | `https://download.geoservice.dlr.de/ENMAP/files/` (`L2A/`, `SPECTRAL_EARTH/`) | Active Account: `azzoma` (SSO Enabled) |
+| **EnMAP L2A** | DLR (Germany) | 224 bands (30m COG) | `https://download.geoservice.dlr.de/ENMAP/files/L2A/[YYYY]/[MM]/[DD]/DT[DataTake]/[Seq]/[Scene]/` | Active Account: `azzoma` (SSO Ticket Enabled) |
 | **ASI PRISMA** | ASI (Italy) | 240 bands (30m, 400–2500nm) | `https://prisma.asi.it/` | Free portal account for L1/L2 scene ordering |
 | **Copernicus CDSE** | European Union | Full Sentinel constellation | `https://dataspace.copernicus.eu/` | OData / S3 API tokens via `sentinelhub` or `openeo` |
 | **USGS EarthExplorer** | USGS | Historical Landsat archive | `https://earthexplorer.usgs.gov/` | Free USGS EROS login for bulk scene downloads |
 | **Bayanat.ae & Abu Dhabi Open Data** | UAE Government | Spatial vectors & Ag statistics | `https://bayanat.ae` | Free portal download (agricultural holdings & crop statistics) |
+
+#### EnMAP Scene File Components
+Within each scene directory (e.g. `ENMAP01-____L2A-DT.../`), files are stored as uncompressed individual GeoTIFFs:
+- `...-SPECTRAL_IMAGE.TIF`: 224-band Hyperspectral GeoTIFF Data Cube (Surface Reflectance).
+- `...-METADATA.xml`: Metadata file (band center wavelengths & solar geometry).
+- `...-QL_QUALITY_CLOUD.TIF`: Cloud Mask GeoTIFF.
+- `...-QL_SWIR.TIF` & `...-QL_VNIR.TIF`: Quicklook preview images.
+
 
 
 
