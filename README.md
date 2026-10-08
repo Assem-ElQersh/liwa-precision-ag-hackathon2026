@@ -249,6 +249,9 @@ graph LR
 | Multispectral & Hyperspectral vegetation and soil salinity index calculations (NDVI, SAVI, SI, NDRE) verified | `notebooks/03_spectral_indices.ipynb` | Establishes baseline vegetation health and soil salinity mapping over Sentinel-2 and hyperspectral imagery. |
 | End-to-end execution of `02_hyperspectral_analysis.ipynb` and `03_spectral_indices.ipynb` empirically validated | `notebooks/02_hyperspectral_analysis.ipynb` & `notebooks/03_spectral_indices.ipynb` | Confirms complete local and Kaggle runtime readiness for EDA, hyperspectral unmixing, and spectral index visualization. |
 | EPSG:4326 DEM topographic slope gradient calculation unit mismatch (degrees vs meters) | `notebooks/00_kaggle_master_eda.ipynb` | Scaling transform step sizes by latitude cosine ($111000 \cdot \cos(\text{lat})$) converts degree grid spacing to meters, eliminating uniform $90^\circ$ saturation and rendering accurate $0^\circ-25^\circ$ dune slopes. |
+| Copernicus DEM 30m Topographic Slope distribution (Min=$0.0^\circ$, Max=$41.1^\circ$, Mean=$4.4^\circ$) | `notebooks/00_kaggle_master_eda.ipynb` | Identifies flat interdune sabkha basins ($<3.0^\circ$) where saline agricultural runoff and groundwater accumulate versus steep dune slipfaces ($>15.0^\circ$). |
+| Sentinel-2 L2A Vegetation Health (NDVI Max=$0.8563$, Mean=$0.0831$; SAVI Max=$0.7182$, Mean=$0.0800$) | `notebooks/00_kaggle_master_eda.ipynb` | Confirms highly localized date palm cultivation along the Liwa crescent oasis embedded within a high-albedo desert sand background ($0.0-0.1$ NDVI). |
+| EnMAP 224-Band Hyperspectral NMF Endmember Curves | `notebooks/00_kaggle_master_eda.ipynb` | Resolves distinct Red Edge ($680-750\text{nm}$) and SWIR gypsum/halite absorption ($1450\text{nm}, 1900\text{nm}$) signatures across 4 sub-pixel land cover components. |
 
 ---
 
