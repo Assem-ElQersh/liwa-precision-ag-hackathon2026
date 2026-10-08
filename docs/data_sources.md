@@ -249,3 +249,42 @@ m.add("spectral")
 - **HyperCoast:** https://github.com/giswqs/hypercoast
 - **StackSTAC:** https://stackstac.readthedocs.io/
 - **GDAL:** https://gdal.org/
+
+
+---
+
+## Published Kaggle Datasets & Absolute Mount Paths
+
+All 5 core Earth Observation datasets over Liwa Oasis are published on Kaggle under user `assemelqirsh`:
+
+### Dataset URLs
+
+1. **Planet Tanager-1 426-Band Hyperspectral:** https://www.kaggle.com/datasets/assemelqirsh/tanager-liwa-l2a
+2. **Sentinel-2 L2A Multispectral Time-Series:** https://www.kaggle.com/datasets/assemelqirsh/sentinel2-liwa-l2a
+3. **EnMAP 224-Band L2A Hyperspectral Cubes:** https://www.kaggle.com/datasets/assemelqirsh/enmap-liwa-l2a
+4. **Copernicus DEM 30m Elevation:** https://www.kaggle.com/datasets/assemelqirsh/copernicus-dem-liwa
+5. **CDSE Authenticated Sentinel-2 SAFE Zip Archives:** https://www.kaggle.com/datasets/assemelqirsh/cdse-sentinel2-liwa
+
+### Absolute Kaggle Mount Paths
+
+When mounted on Kaggle notebooks, datasets are accessible via standard input paths:
+
+- **CDSE Sentinel-2 Archives:**
+  - Base Directory: `/kaggle/input/cdse-sentinel2-liwa` or `/kaggle/input/datasets/assemelqirsh/cdse-sentinel2-liwa`
+  - Manifest / Metadata: `/kaggle/input/datasets/assemelqirsh/cdse-sentinel2-liwa/S2C_MSIL1C_...SAFE/manifest.safe`
+
+- **EnMAP L2A Hyperspectral:**
+  - Base Directory: `/kaggle/input/enmap-liwa-l2a/enmap_liwa_dataset` or `/kaggle/input/datasets/assemelqirsh/enmap-liwa-l2a/enmap_liwa_dataset`
+  - Spectral Image Cubes: `/kaggle/input/datasets/assemelqirsh/enmap-liwa-l2a/enmap_liwa_dataset/ENMAP01-.../SPECTRAL_IMAGE.TIF`
+
+- **Sentinel-2 L2A Time-Series:**
+  - Base Directory: `/kaggle/input/sentinel2-liwa-l2a` or `/kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a`
+  - Scene Bands: `/kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a/S2_L2A_.../B02.tif`
+
+- **Planet Tanager-1 HDF5:**
+  - Base Directory: `/kaggle/input/tanager-liwa-l2a` or `/kaggle/input/datasets/assemelqirsh/tanager-liwa-l2a`
+  - Reflectance HDF5: `/kaggle/input/datasets/assemelqirsh/tanager-liwa-l2a/20250224_145149_32_4001_surface_reflectance.h5`
+
+- **Copernicus DEM 30m:**
+  - Base Directory: `/kaggle/input/copernicus-dem-liwa` or `/kaggle/input/datasets/assemelqirsh/copernicus-dem-liwa`
+  - DEM Rasters: `/kaggle/input/datasets/assemelqirsh/copernicus-dem-liwa/Copernicus_DSM_COG_10_N23_00_E054_00_DEM.tif`
