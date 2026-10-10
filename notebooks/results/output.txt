@@ -1,3 +1,11 @@
+=== 03_spectral_indices.ipynb Execution ===
+Found Sentinel-2 B04: /kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a/S2_L2A_20250927_S2B_39QYF_20250927_0/B04.tif
+Found Sentinel-2 B08: /kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a/S2_L2A_20250927_S2B_39QYF_20250927_0/B08.tif
+NDVI Range: Min=-0.4487, Max=0.8314, Mean=0.0777
+SAVI Range: Min=-0.3246, Max=0.7020, Mean=0.0758
+SI Range: Min=0.1294, Max=0.6760, Mean=0.5231
+NDMI Range: Min=-0.8642, Max=0.7964, Mean=-0.1158
+
 === 04_time_series_analysis.ipynb Execution ===
 === Sentinel-2 Time Series Discovery ===
 B04 (Red) Band Files Found: 4
