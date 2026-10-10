@@ -254,6 +254,7 @@ graph LR
 | EnMAP 224-Band Hyperspectral NMF Endmember Curves | `notebooks/00_kaggle_master_eda.ipynb` | Resolves distinct Red Edge ($680-750\text{nm}$) and SWIR gypsum/halite absorption ($1450\text{nm}, 1900\text{nm}$) signatures across 4 sub-pixel land cover components. |
 | Production dataset path routing refactored for `04_time_series_analysis`, `05_ml_baselines`, `06_deep_learning_eo`, `07_change_detection` | `notebooks/04_time_series_analysis.ipynb` through `07_change_detection.ipynb` | Replaces tutorial placeholder data (California Housing, Breast Cancer, 1992 AVIRIS Indiana) with mounted Kaggle datasets (`/kaggle/input/**/`). |
 | Sentinel-2 Multi-temporal Vegetation Phenology (4 scenes Sept 2025: S2B/S2C tiles 39QYF, 39QZF, 40QBL) | `notebooks/04_time_series_analysis.ipynb` | Mean NDVI ($0.0109-0.0855$) bounds vegetative fraction to $<3\%$ across desert tiles; S2C single-pixel saturation ($0.9997$ NDVI) dictates prioritizing SAVI ($0.7083-0.8351$) for robust soil-adjusted canopy monitoring. |
+| Random Forest 5-Fold Spatial CV Baseline (Accuracy=$0.9999 \pm 0.0002$, Macro-F1=$0.9973 \pm 0.0054$, Class Balance: Sand $99.12\%$, Stressed $0.66\%$, Healthy $0.22\%$) | `notebooks/05_ml_baselines.ipynb` | Statistically verifies $>99\%$ bare sand background dominance; confirms non-linear decision tree boundaries accurately isolate sparse date palm canopies from stressed sabkha margins without false-positive desert alarms. |
 
 ---
 

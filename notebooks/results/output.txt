@@ -1,3 +1,4 @@
+=== 04_time_series_analysis.ipynb Execution ===
 === Sentinel-2 Time Series Discovery ===
 B04 (Red) Band Files Found: 4
 B08 (NIR) Band Files Found: 4
@@ -7,3 +8,12 @@ S2_L2A_20250927_S2B_39QYF_20250927_0   0.083148  0.856284   0.080025  0.718191
 S2_L2A_20250929_S2C_39QYF_20250929_0   0.010896  0.999682   0.010464  0.835135
 S2_L2A_20250929_S2C_39QZF_20250929_0   0.085521  0.999679   0.082181  0.832295
 S2_L2A_20250929_S2C_40QBL_20250929_0   0.084273  0.838610   0.080864  0.708319
+
+=== 05_ml_baselines.ipynb Execution ===
+Tabular Dataset Shape: (10000, 5)
+Class Distribution: Bare Sand=9912, Stressed=66, Healthy Canopy=22
+=== Random Forest 5-Fold Cross-Validation Metrics ===
+Accuracy:        0.9999 +/- 0.0002
+Macro-F1 Score:  0.9973 +/- 0.0054
+Macro Precision: 1.0000 +/- 0.0001
+Macro Recall:    0.9949 +/- 0.0103
