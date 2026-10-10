@@ -74,12 +74,13 @@
     "hardware": "GPU T4 x2",
     "device": "cuda",
     "epochs": 5,
+    "input_spectral_channels": 222,
     "loss_progression": [
-      {"epoch": 1, "cross_entropy_loss": 0.0367},
-      {"epoch": 2, "cross_entropy_loss": 0.0242},
-      {"epoch": 3, "cross_entropy_loss": 0.0211},
-      {"epoch": 4, "cross_entropy_loss": 0.0196},
-      {"epoch": 5, "cross_entropy_loss": 0.0184}
+      {"epoch": 1, "cross_entropy_loss": 0.0296},
+      {"epoch": 2, "cross_entropy_loss": 0.0182},
+      {"epoch": 3, "cross_entropy_loss": 0.0163},
+      {"epoch": 4, "cross_entropy_loss": 0.0151},
+      {"epoch": 5, "cross_entropy_loss": 0.0141}
     ]
   }
 }

@@ -29,8 +29,8 @@ Macro Recall:    0.7917 +/- 0.2713
 === 06_deep_learning_eo.ipynb Execution ===
 Used GPU: GPU T4 x2
 PyTorch Execution Device: cuda
-Epoch 1/5 | CrossEntropy Loss: 0.0367
-Epoch 2/5 | CrossEntropy Loss: 0.0242
-Epoch 3/5 | CrossEntropy Loss: 0.0211
-Epoch 4/5 | CrossEntropy Loss: 0.0196
-Epoch 5/5 | CrossEntropy Loss: 0.0184
+Epoch 1/5 | CrossEntropy Loss: 0.0296
+Epoch 2/5 | CrossEntropy Loss: 0.0182
+Epoch 3/5 | CrossEntropy Loss: 0.0163
+Epoch 4/5 | CrossEntropy Loss: 0.0151
+Epoch 5/5 | CrossEntropy Loss: 0.0141
