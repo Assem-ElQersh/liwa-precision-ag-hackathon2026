@@ -17,3 +17,12 @@ Accuracy:        0.9999 +/- 0.0002
 Macro-F1 Score:  0.9973 +/- 0.0054
 Macro Precision: 1.0000 +/- 0.0001
 Macro Recall:    0.9949 +/- 0.0103
+
+=== 06_deep_learning_eo.ipynb Execution ===
+Used GPU: GPU T4 x2
+PyTorch Execution Device: cuda
+Epoch 1/5 | CrossEntropy Loss: 0.0367
+Epoch 2/5 | CrossEntropy Loss: 0.0242
+Epoch 3/5 | CrossEntropy Loss: 0.0211
+Epoch 4/5 | CrossEntropy Loss: 0.0196
+Epoch 5/5 | CrossEntropy Loss: 0.0184

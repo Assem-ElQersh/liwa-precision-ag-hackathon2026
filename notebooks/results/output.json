@@ -46,5 +46,17 @@
       "macro_recall": 0.9949,
       "macro_recall_std": 0.0103
     }
+  },
+  "06_deep_learning_eo": {
+    "hardware": "GPU T4 x2",
+    "device": "cuda",
+    "epochs": 5,
+    "loss_progression": [
+      {"epoch": 1, "cross_entropy_loss": 0.0367},
+      {"epoch": 2, "cross_entropy_loss": 0.0242},
+      {"epoch": 3, "cross_entropy_loss": 0.0211},
+      {"epoch": 4, "cross_entropy_loss": 0.0196},
+      {"epoch": 5, "cross_entropy_loss": 0.0184}
+    ]
   }
 }
