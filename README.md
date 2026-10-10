@@ -253,6 +253,7 @@ graph LR
 | Sentinel-2 L2A Vegetation Health (NDVI Max=$0.8563$, Mean=$0.0831$; SAVI Max=$0.7182$, Mean=$0.0800$) | `notebooks/00_kaggle_master_eda.ipynb` | Confirms highly localized date palm cultivation along the Liwa crescent oasis embedded within a high-albedo desert sand background ($0.0-0.1$ NDVI). |
 | EnMAP 224-Band Hyperspectral NMF Endmember Curves | `notebooks/00_kaggle_master_eda.ipynb` | Resolves distinct Red Edge ($680-750\text{nm}$) and SWIR gypsum/halite absorption ($1450\text{nm}, 1900\text{nm}$) signatures across 4 sub-pixel land cover components. |
 | Production dataset path routing refactored for `04_time_series_analysis`, `05_ml_baselines`, `06_deep_learning_eo`, `07_change_detection` | `notebooks/04_time_series_analysis.ipynb` through `07_change_detection.ipynb` | Replaces tutorial placeholder data (California Housing, Breast Cancer, 1992 AVIRIS Indiana) with mounted Kaggle datasets (`/kaggle/input/**/`). |
+| Sentinel-2 Multi-temporal Vegetation Phenology (4 scenes Sept 2025: S2B/S2C tiles 39QYF, 39QZF, 40QBL) | `notebooks/04_time_series_analysis.ipynb` | Mean NDVI ($0.0109-0.0855$) bounds vegetative fraction to $<3\%$ across desert tiles; S2C single-pixel saturation ($0.9997$ NDVI) dictates prioritizing SAVI ($0.7083-0.8351$) for robust soil-adjusted canopy monitoring. |
 
 ---
 
