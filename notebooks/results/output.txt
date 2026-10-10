@@ -18,13 +18,13 @@ S2_L2A_20250929_S2C_39QZF_20250929_0   0.085521  0.999679   0.082181  0.832295
 S2_L2A_20250929_S2C_40QBL_20250929_0   0.084273  0.838610   0.080864  0.708319
 
 === 05_ml_baselines.ipynb Execution ===
-Tabular Dataset Shape: (10000, 5)
+Tabular Dataset Shape: (10000, 4)
 Class Distribution: Bare Sand=9912, Stressed=66, Healthy Canopy=22
 === Random Forest 5-Fold Cross-Validation Metrics ===
-Accuracy:        0.9999 +/- 0.0002
-Macro-F1 Score:  0.9973 +/- 0.0054
-Macro Precision: 1.0000 +/- 0.0001
-Macro Recall:    0.9949 +/- 0.0103
+Accuracy:        0.9996 +/- 0.0006
+Macro-F1 Score:  0.8066 +/- 0.2637
+Macro Precision: 0.8665 +/- 0.2666
+Macro Recall:    0.7917 +/- 0.2713
 
 === 06_deep_learning_eo.ipynb Execution ===
 Used GPU: GPU T4 x2

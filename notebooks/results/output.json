@@ -53,21 +53,21 @@
     }
   ],
   "05_ml_baselines": {
-    "sample_shape": [10000, 5],
+    "sample_shape": [10000, 4],
     "class_distribution": {
       "Bare Sand": 9912,
       "Stressed": 66,
       "Healthy Canopy": 22
     },
     "cross_validation_metrics_5fold": {
-      "accuracy": 0.9999,
-      "accuracy_std": 0.0002,
-      "macro_f1": 0.9973,
-      "macro_f1_std": 0.0054,
-      "macro_precision": 1.0000,
-      "macro_precision_std": 0.0001,
-      "macro_recall": 0.9949,
-      "macro_recall_std": 0.0103
+      "accuracy": 0.9996,
+      "accuracy_std": 0.0006,
+      "macro_f1": 0.8066,
+      "macro_f1_std": 0.2637,
+      "macro_precision": 0.8665,
+      "macro_precision_std": 0.2666,
+      "macro_recall": 0.7917,
+      "macro_recall_std": 0.2713
     }
   },
   "06_deep_learning_eo": {
