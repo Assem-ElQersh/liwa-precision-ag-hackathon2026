@@ -82,5 +82,18 @@
       {"epoch": 4, "cross_entropy_loss": 0.0151},
       {"epoch": 5, "cross_entropy_loss": 0.0141}
     ]
+  },
+  "07_change_detection": {
+    "utm_tile": "39QYF",
+    "t1_scene": "S2_L2A_20250927_S2B_39QYF_20250927_0",
+    "t1_date": "20250927",
+    "t2_scene": "S2_L2A_20250929_S2C_39QYF_20250929_0",
+    "t2_date": "20250929",
+    "delta_ndvi": {
+      "min": -1.1632,
+      "max": 1.0069,
+      "mean": -0.0723
+    },
+    "vegetation_stress_anomaly_threshold": -0.144
   }
 }

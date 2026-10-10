@@ -34,3 +34,10 @@ Epoch 2/5 | CrossEntropy Loss: 0.0182
 Epoch 3/5 | CrossEntropy Loss: 0.0163
 Epoch 4/5 | CrossEntropy Loss: 0.0151
 Epoch 5/5 | CrossEntropy Loss: 0.0141
+
+=== 07_change_detection.ipynb Execution ===
+Selected UTM tile: 39QYF
+t1 (earliest): S2_L2A_20250927_S2B_39QYF_20250927_0 (Date: 20250927)
+t2 (latest):   S2_L2A_20250929_S2C_39QYF_20250929_0 (Date: 20250929)
+Delta NDVI Range: Min=-1.1632, Max=1.0069, Mean=-0.0723
+Vegetation Stress Anomaly Mask Threshold: Delta NDVI < -0.144
