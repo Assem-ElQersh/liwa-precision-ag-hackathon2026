@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Liwa Green Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 40, "left": 10, "attrs": {} },
+    { "type": "board-ssd1306", "id": "oled", "top": -120, "left": 5, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-potentiometer", "id": "pot_moist", "top": -130, "left": -180, "attrs": { "label": "Soil Moisture" } },
+    { "type": "wokwi-potentiometer", "id": "pot_salin", "top": -130, "left": 180, "attrs": { "label": "Soil Salinity EC" } },
+    { "type": "wokwi-relay-module", "id": "relay", "top": 180, "left": -160, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_valve", "top": 200, "left": 120, "attrs": { "color": "green", "label": "Solenoid Valve" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 240, "left": 70, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:GND.1", "oled:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "oled:VCC", "red", [ "v0" ] ],
+    [ "esp:21", "oled:SDA", "green", [ "v0" ] ],
+    [ "esp:22", "oled:SCL", "yellow", [ "v0" ] ],
+
+    [ "esp:GND.1", "pot_moist:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "pot_moist:VCC", "red", [ "v0" ] ],
+    [ "esp:34", "pot_moist:SIG", "blue", [ "v0" ] ],
+
+    [ "esp:GND.1", "pot_salin:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "pot_salin:VCC", "red", [ "v0" ] ],
+    [ "esp:35", "pot_salin:SIG", "purple", [ "v0" ] ],
+
+    [ "esp:GND.2", "relay:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "relay:VCC", "red", [ "v0" ] ],
+    [ "esp:23", "relay:IN", "orange", [ "v0" ] ],
+
+    [ "relay:NO", "led_valve:A", "green", [ "v0" ] ],
+    [ "relay:COM", "esp:5V", "red", [ "v0" ] ],
+    [ "led_valve:C", "r1:1", "black", [ "v0" ] ],
+    [ "r1:2", "esp:GND.2", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
