@@ -67,3 +67,5 @@ Thumbs.db
 # Local config
 .env.local
 config.local.yaml
+training_materials/
+data/external (training_materials)/
