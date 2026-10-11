@@ -1,0 +1,29 @@
+{
+  "product_name": "Sentinel-2 MSI Level-2A Sample Scene",
+  "provider": "Copernicus Space Component / ESA",
+  "spatial_resolution_meters": 10.0,
+  "dimensions": {
+    "width_pixels": 200,
+    "height_pixels": 200,
+    "bands": 4
+  },
+  "crs": "EPSG:32639",
+  "bounds_utm": {
+    "west": 786000.0,
+    "south": 2556000.0,
+    "east": 788000.0,
+    "north": 2558000.0
+  },
+  "geographic_center": {
+    "latitude": 23.085,
+    "longitude": 53.821,
+    "location": "Liwa Oasis, Al Dhafra Region, Abu Dhabi, United Arab Emirates"
+  },
+  "band_specifications": [
+    {"index": 1, "band": "B02", "name": "Blue", "central_wavelength_nm": 492.4, "scale_factor": 0.0001},
+    {"index": 2, "band": "B03", "name": "Green", "central_wavelength_nm": 559.8, "scale_factor": 0.0001},
+    {"index": 3, "band": "B04", "name": "Red", "central_wavelength_nm": 664.6, "scale_factor": 0.0001},
+    {"index": 4, "band": "B08", "name": "NIR", "central_wavelength_nm": 832.8, "scale_factor": 0.0001}
+  ],
+  "license": "Creative Commons Attribution 4.0 International (CC-BY-4.0)"
+}

@@ -41,6 +41,8 @@ data/raw/
 data/processed/
 *.tif
 *.tiff
+!data/sample_input/*.tif
+!data/sample_input/*.tiff
 *.geotiff
 *.nc
 *.hdf

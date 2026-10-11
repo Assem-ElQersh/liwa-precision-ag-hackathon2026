@@ -1,0 +1,43 @@
+=== 03_spectral_indices.ipynb Execution ===
+Found Sentinel-2 B04: /kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a/S2_L2A_20250927_S2B_39QYF_20250927_0/B04.tif
+Found Sentinel-2 B08: /kaggle/input/datasets/assemelqirsh/sentinel2-liwa-l2a/S2_L2A_20250927_S2B_39QYF_20250927_0/B08.tif
+NDVI Range: Min=-0.4487, Max=0.8314, Mean=0.0777
+SAVI Range: Min=-0.3246, Max=0.7020, Mean=0.0758
+SI Range: Min=0.1294, Max=0.6760, Mean=0.5231
+NDMI Range: Min=-0.8642, Max=0.7964, Mean=-0.1158
+
+=== 04_time_series_analysis.ipynb Execution ===
+=== Sentinel-2 Time Series Discovery ===
+B04 (Red) Band Files Found: 4
+B08 (NIR) Band Files Found: 4
+=== Multi-Temporal Vegetation Summary ===
+                               scene  ndvi_mean  ndvi_max  savi_mean  savi_max
+S2_L2A_20250927_S2B_39QYF_20250927_0   0.083148  0.856284   0.080025  0.718191
+S2_L2A_20250929_S2C_39QYF_20250929_0   0.010896  0.999682   0.010464  0.835135
+S2_L2A_20250929_S2C_39QZF_20250929_0   0.085521  0.999679   0.082181  0.832295
+S2_L2A_20250929_S2C_40QBL_20250929_0   0.084273  0.838610   0.080864  0.708319
+
+=== 05_ml_baselines.ipynb Execution ===
+Tabular Dataset Shape: (10000, 4)
+Class Distribution: Bare Sand=9912, Stressed=66, Healthy Canopy=22
+=== Random Forest 5-Fold Cross-Validation Metrics ===
+Accuracy:        0.9996 +/- 0.0006
+Macro-F1 Score:  0.8066 +/- 0.2637
+Macro Precision: 0.8665 +/- 0.2666
+Macro Recall:    0.7917 +/- 0.2713
+
+=== 06_deep_learning_eo.ipynb Execution ===
+Used GPU: GPU T4 x2
+PyTorch Execution Device: cuda
+Epoch 1/5 | CrossEntropy Loss: 0.0296
+Epoch 2/5 | CrossEntropy Loss: 0.0182
+Epoch 3/5 | CrossEntropy Loss: 0.0163
+Epoch 4/5 | CrossEntropy Loss: 0.0151
+Epoch 5/5 | CrossEntropy Loss: 0.0141
+
+=== 07_change_detection.ipynb Execution ===
+Selected UTM tile: 39QYF
+t1 (earliest): S2_L2A_20250927_S2B_39QYF_20250927_0 (Date: 20250927)
+t2 (latest):   S2_L2A_20250929_S2C_39QYF_20250929_0 (Date: 20250929)
+Delta NDVI Range: Min=-1.1632, Max=1.0069, Mean=-0.0723
+Vegetation Stress Anomaly Mask Threshold: Delta NDVI < -0.144

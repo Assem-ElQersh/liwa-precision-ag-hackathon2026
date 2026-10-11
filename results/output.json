@@ -1,0 +1,99 @@
+{
+  "03_spectral_indices": {
+    "scene": "S2_L2A_20250927_S2B_39QYF_20250927_0",
+    "ndvi": {
+      "min": -0.4487,
+      "max": 0.8314,
+      "mean": 0.0777
+    },
+    "savi": {
+      "min": -0.3246,
+      "max": 0.7020,
+      "mean": 0.0758
+    },
+    "si": {
+      "min": 0.1294,
+      "max": 0.6760,
+      "mean": 0.5231
+    },
+    "ndmi": {
+      "min": -0.8642,
+      "max": 0.7964,
+      "mean": -0.1158
+    }
+  },
+  "04_time_series_analysis": [
+    {
+      "scene": "S2_L2A_20250927_S2B_39QYF_20250927_0",
+      "ndvi_mean": 0.083148,
+      "ndvi_max": 0.856284,
+      "savi_mean": 0.080025,
+      "savi_max": 0.718191
+    },
+    {
+      "scene": "S2_L2A_20250929_S2C_39QYF_20250929_0",
+      "ndvi_mean": 0.010896,
+      "ndvi_max": 0.999682,
+      "savi_mean": 0.010464,
+      "savi_max": 0.835135
+    },
+    {
+      "scene": "S2_L2A_20250929_S2C_39QZF_20250929_0",
+      "ndvi_mean": 0.085521,
+      "ndvi_max": 0.999679,
+      "savi_mean": 0.082181,
+      "savi_max": 0.832295
+    },
+    {
+      "scene": "S2_L2A_20250929_S2C_40QBL_20250929_0",
+      "ndvi_mean": 0.084273,
+      "ndvi_max": 0.838610,
+      "savi_mean": 0.080864,
+      "savi_max": 0.708319
+    }
+  ],
+  "05_ml_baselines": {
+    "sample_shape": [10000, 4],
+    "class_distribution": {
+      "Bare Sand": 9912,
+      "Stressed": 66,
+      "Healthy Canopy": 22
+    },
+    "cross_validation_metrics_5fold": {
+      "accuracy": 0.9996,
+      "accuracy_std": 0.0006,
+      "macro_f1": 0.8066,
+      "macro_f1_std": 0.2637,
+      "macro_precision": 0.8665,
+      "macro_precision_std": 0.2666,
+      "macro_recall": 0.7917,
+      "macro_recall_std": 0.2713
+    }
+  },
+  "06_deep_learning_eo": {
+    "hardware": "GPU T4 x2",
+    "device": "cuda",
+    "epochs": 5,
+    "input_spectral_channels": 222,
+    "loss_progression": [
+      {"epoch": 1, "cross_entropy_loss": 0.0296},
+      {"epoch": 2, "cross_entropy_loss": 0.0182},
+      {"epoch": 3, "cross_entropy_loss": 0.0163},
+      {"epoch": 4, "cross_entropy_loss": 0.0151},
+      {"epoch": 5, "cross_entropy_loss": 0.0141}
+    ]
+  },
+  "07_change_detection": {
+    "utm_tile": "39QYF",
+    "t1_scene": "S2_L2A_20250927_S2B_39QYF_20250927_0",
+    "t1_date": "20250927",
+    "t2_scene": "S2_L2A_20250929_S2C_39QYF_20250929_0",
+    "t2_date": "20250929",
+    "delta_ndvi": {
+      "min": -1.1632,
+      "max": 1.0069,
+      "mean": -0.0723
+    },
+    "vegetation_stress_anomaly_threshold": -0.144
+  }
+}

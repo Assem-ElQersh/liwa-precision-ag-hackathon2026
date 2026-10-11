@@ -1,3 +1,4 @@
+# Python Version: Python 3.11 (Compatible: Python 3.10, 3.11)
 # Core geospatial
 gdal==3.9.2
 rasterio==1.3.10
